@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: "Satoshi", sans-serif;
+  font-weight: var(--app-font-regular);
+  font-size: var(--app-base-text-size);
+  color: var(--app-text-color);
+  background-color: var(--app-background-color);
+}
+
+h1, p {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Garamond Pro", serif;
+  font-size: var(--app-h1-size);
+  font-weight: var(--app-font-light);
+}
+
+p {
+  font-size: var(--app-text-size);
+}
+
+.accent-color {
+  color: var(--app-accent-color);;
+}

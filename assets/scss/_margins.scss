@@ -1,0 +1,16 @@
+:root {
+  --app-content-margin-x: 1.5rem;
+  --app-content-padding-y: 3rem;
+
+  @include from($md) {
+    --app-content-padding-y: 4rem;
+  }
+
+  @include from($lg) {
+    --app-content-margin-x: max(calc((100vw - 860px) / 2), 4rem);
+  }
+
+  @include from($xl) {
+    --app-content-margin-x: max(calc((100vw - 950px) / 2), 8rem);
+  }
+}

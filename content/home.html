@@ -1,0 +1,98 @@
+---
+title: "Back to Tilicho"
+description: "Back to Tilicho is a poignant and joyous documentary film that explores the impact of trauma on identity, the power of nostalgia, and the bittersweet passage from youthful innocence into adulthood."
+slug: /
+---
+
+<section id="banner-title">
+    <div class="section-content">
+        <div id="movie-title-wrapper">
+            <h1>Back to Tilicho</h1>
+            <div id="idealism-wrapper">
+                <span>IDEALISME</span>
+                <span id="idealisme-middle-word">IS</span>
+                <span>OVERRATED</span>
+            </div>
+        </div>
+        <div id="banner-wrapper">
+            <img src="/images/tilicho_hero_banner.jpg" alt="Home banner">
+        </div>
+        <div id="watch-the-trailer-line-wrapper">
+            <span>Watch the trailer</span>
+            <img src="/svg/line.svg" alt="line">
+        </div>
+    </div>
+</section>
+
+<section id="quote-director">
+    <div class="section-content">
+        <p>
+            "Back to Tilicho is a poignant and joyous documentary film that explores the impact of trauma on identity,
+            the
+            power of nostalgia, and the bittersweet passage from youthful innocence into adulthood."
+        </p>
+        <span class="accent-color">Sarah Charley, Director</span>
+    </div>
+</section>
+
+<section id="watch-the-trailer">
+    <div class="section-content">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/882864884?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    title="Back to Tilicho - Trailer"></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <img src="/images/movie-mask.png" alt="" />
+    </div>
+</section>
+
+<section id="synopsis">
+    <div class="section-content">
+        <img src="/svg/lake-tilicho.svg" alt="Lake Tilicho"/>
+        <p>
+            As a young woman prepares to get married, she becomes consumed with demons from her past. To reconnect with
+            who
+            she was before the trauma, she and her new husband <span class="accent-color">walk 500 kilometers</span> on
+            the <span class="accent-color">Great Himalaya Trail</span> to a
+            <span class="accent-color">significant place</span> from her youth: <span
+                class="accent-color">Lake Tilicho</span>, one of the highest lakes in the world. But when faced with
+            treacherous terrain, snow storms, near-death accidents, resurfacing repressed memories, and seemingly
+            insurmountable barriers, she realizes that maybe <span
+                class="accent-color">she wasn't supposed to go back</span>.
+        </p>
+    </div>
+</section>
+
+<section id="about-the-authors">
+    <div class="section-content">
+        <div id="about-the-authors-img-wrapper">
+            <img src="/images/authors.jpg" alt="Sarah Charley & Maxime Hutinet">
+            <i>Sarah Charley & Maxime Hutinet</i>
+        </div>
+        <p>
+            It follows the journey of <span class="accent-color">Sarah Charley</span>, a young woman who embarks on a deeply personal and transformative
+            quest to reconnect with her authentic self after surviving abuse and sexual violence.
+            <br/>
+            <br/>
+            In 2022, Sarah and her husband <span class="accent-color">Maxime Hutinet</span> set-out on a 500 kilometer pilgrimage along the Great Himalaya
+            Trail, the highest through-hike in the world, in an attempt to <span class="accent-color">heal and reset</span> before starting the next phase
+            of their lives. But as everything on their trip starts to go wrong, both must <span class="accent-color">confront their demons</span> and
+            <span class="accent-color">trust their instincts</span> to <span class="accent-color">survive</span>.
+        </p>
+    </div>
+</section>
+
+<script>
+    const h1 = document.querySelector("h1");
+    document.onscroll = () => {
+        const bannerTitleScrollRatio = getBannerScrollRatio();
+        h1.style.letterSpacing = bannerTitleScrollRatio * 5 + "px";
+    };
+
+    function getBannerScrollRatio() {
+        const bannerTitleDiv = document.getElementById("banner-title");
+        return window.scrollY / bannerTitleDiv.clientHeight;
+    }
+</script>

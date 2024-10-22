@@ -1,0 +1,29 @@
+:root {
+  --app-font-light: 300;
+  --app-font-regular: 400;
+
+  --app-base-text-size: 1rem;
+  --app-text-size: var(--app-base-text-size);
+  --app-smaller-text-size: 0.875rem;
+  --app-h1-size: 3.5rem;
+  --app-watch-trailer-size: 0.75rem;
+  --app-idealism-size: 1.5rem;
+  --app-idealism-is-size: calc(var(--app-idealism-size) * 0.50);
+  --app-authors-names-size: 0.625rem;
+
+  @include from($sm) {
+    --app-h1-size: 5.8rem;
+    --app-idealism-size: calc(var(--app-h1-size) * 0.40);
+  }
+
+  @include from($md) {
+    --app-smaller-text-size: 1rem;
+    --app-h1-size: 7.5rem;
+    --app-text-size: 1.125rem;
+    --app-authors-names-size: 0.825rem;
+  }
+
+  @include from($lg) {
+    --app-h1-size: 9.5rem;
+  }
+}

@@ -1,0 +1,19 @@
+@each $breakpoint, $breakpoint-width in $breakpoints {
+  @include from($breakpoint-width) {
+    body.debug:after {
+      content: "#{$breakpoint}";
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      background-color: red;
+      color: white;
+      position: fixed;
+      opacity: 0.7;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      z-index: 101;
+    }
+  }
+}

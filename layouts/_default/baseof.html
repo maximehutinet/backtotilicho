@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    {{- partial "google-analytics.html" . -}}
+    <body>
+        <main>
+            {{- block "main" . }}{{- end }}
+        </main>
+    </body>
+    {{- partial "footer.html" . -}}
+</html>
