@@ -48,12 +48,12 @@ section#banner-title {
         }
 
         span {
-          &:not(#idealisme-middle-word) {
+          &:not(#idealism-middle-word) {
             font-family: "Theater", sans-serif;
             font-size: var(--app-idealism-size);
           }
 
-          &#idealisme-middle-word {
+          &#idealism-middle-word {
             font-family: "Garamond Pro", serif;
             font-style: italic;
             font-size: var(--app-idealism-is-size);
