@@ -24,3 +24,8 @@ p {
 .accent-color {
   color: var(--app-accent-color);;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
