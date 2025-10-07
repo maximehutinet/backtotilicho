@@ -10,10 +10,14 @@
   --app-idealism-size: 1.5rem;
   --app-idealism-is-size: calc(var(--app-idealism-size) * 0.50);
   --app-authors-names-size: 0.625rem;
+  --app-audience-reaction: 0.7rem;
+  --app-audience-reaction-author: 0.7rem;
 
   @include from($sm) {
     --app-h1-size: 5.8rem;
     --app-idealism-size: calc(var(--app-h1-size) * 0.40);
+    --app-audience-reaction: 1.2rem;
+    --app-audience-reaction-author: 1rem;
   }
 
   @include from($md) {
