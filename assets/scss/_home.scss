@@ -65,7 +65,7 @@ section#banner-title {
 
     #official-selection-wrapper {
       position: absolute;
-      top: 4rem;
+      top: 2rem;
       left: 50%;
       transform: translateX(-50%);
 
@@ -74,10 +74,10 @@ section#banner-title {
       }
 
       img {
-        max-width: 8rem;
+        max-width: 14rem;
 
         @include from($sm) {
-          max-width: 13rem;
+          max-width: 18rem;
         }
       }
     }
@@ -91,7 +91,7 @@ section#banner-title {
       width: 100%;
 
       @include from($sm) {
-        top: 16rem;
+        top: 22rem;
       }
 
       h1 {
