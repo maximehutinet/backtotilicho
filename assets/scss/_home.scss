@@ -198,7 +198,9 @@ section#synopsis, section#about-the-authors {
     margin: 0 var(--app-content-margin-x);
     padding: var(--app-content-padding-y) 0;
   }
+}
 
+section#synopsis {
   img {
     width: 100%;
   }
@@ -209,11 +211,31 @@ section#synopsis, section#about-the-authors {
 }
 
 section#about-the-authors {
+  h2 {
+    padding-top: 3rem;
+  }
+
   .section-content {
     padding-bottom: 0;
+    padding-top: 0;
   }
   #about-the-authors-img-wrapper {
-    position: relative;
+    display: flex;
+    justify-content: center;
+
+    > div {
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      height: unset;
+
+      @include from($md) {
+        width: unset;
+        height: 50rem;
+      }
+    }
 
     i {
       position: absolute;

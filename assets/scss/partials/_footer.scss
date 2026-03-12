@@ -4,8 +4,21 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  text-align: center;
   color: var(--app-grey-color);
+  font-size: var(--app-smaller-text-size);
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    text-align: center;
+
+    @include from($md) {
+      text-align: unset;
+    }
+  }
 
   @include from($md) {
     flex-direction: row;
