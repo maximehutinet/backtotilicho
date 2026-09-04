@@ -68,17 +68,31 @@ section#banner-title {
       top: 2rem;
       left: 50%;
       transform: translateX(-50%);
+      display: flex;
+      gap: 2rem;
 
       @include from($sm) {
         top: 4rem;
       }
 
-      img {
-        max-width: 14rem;
+      a {
+        height: 4rem;
+
+        &.mobile-hidden {
+          display: none;
+
+          @include from($lg) {
+            display: block;
+          }
+        }
 
         @include from($sm) {
-          max-width: 18rem;
+          height: 6rem;
         }
+      }
+
+      img {
+        height: 100%;
       }
     }
 
@@ -91,7 +105,11 @@ section#banner-title {
       width: 100%;
 
       @include from($sm) {
-        top: 22rem;
+        top: 15rem;
+      }
+
+      @include from($xxl) {
+        top: 17rem;
       }
 
       h1 {

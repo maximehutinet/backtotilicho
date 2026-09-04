@@ -1,4 +1,4 @@
 {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed") }}
 {{ $styleSass := resources.Get "scss/styles.scss" }}
-{{ $styleCSS := $styleSass | resources.ToCSS $options }}
+{{ $styleCSS := $styleSass | css.Sass $options }}
 <link rel="stylesheet" href="{{ $styleCSS.Permalink }}">
